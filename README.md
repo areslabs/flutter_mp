@@ -1,16 +1,14 @@
 # flutter_mp
 
-**flutter_mp** inspired by [alita](https://github.com/areslabs/alita)。 `Alita`引擎对`JSX`的动态处理方式，给声明式UI框架在
-类小程序运行提供了思路。**flutter_mp**正是这个思路在**Flutter**上的尝试。 
+**flutter_mp** inspired by [Alita](https://github.com/areslabs/alita)。 [Alita](https://github.com/areslabs/alita)引擎对`JSX`的[动态处理方式](https://areslabs.github.io/alita/一种让小程序支持JSX语法的新思路.html)，给声明式UI框架在
+类小程序运行提供了思路。**flutter_mp**正是这个思路在**Flutter**上的尝试。不过，现在**flutter_mp**还处于很早期的实验阶段，如果现在你的产品就有APP端，小程序端的多端需求，暂时我们还是建议你使用[Alita](https://github.com/areslabs/alita)，这是一套相对成熟的基于React Native的方案。
 
-**flutter_mp**的目标是把**Flutter**扩展到类小程序平台，**Flutter**是一个非常优秀的跨端框架，不仅可以运行在`Android`， `iOS`，通过[flutter_web](https://github.com/flutter/flutter_web)还
+**flutter_mp**的目标是把**Flutter**扩展到类小程序平台，**Flutter**是一个非常优秀的跨端框架，不仅可以运行在`Android`， `iOS`，通过**flutter_web**还
 可以运行在`web`平台，但是官方并没有涉及小程序平台，希望**flutter_mp**可以填补这方面的空白。
 
-现阶段，**flutter_mp**还是一个很不成熟的项目，还处于"实验阶段"，完成度还很低，很多东西还在探索阶段，离实际的可用还有很长的距离，我们也仅仅是把官方简单demo
+现阶段，**flutter_mp**还是一个很不成熟的项目，完成度还很低，很多东西还在探索阶段，离实际的可用还有很长的距离，我们也仅仅是把官方简单demo
 运行在了微信小程序。另外，把所有的**Flutter**特性都在小程序上实现我们认为是不可能的，肯定会存在一些阉割和取舍，包括动画，手势等等在内的还原程度，我们也还在思考，欢迎
 关注我们最新的进展。
-
-如果你现在就有APP端，小程序端的跨端需求，我们还是建议你使用[Alita](https://github.com/areslabs/alita)。
 
 <table>
    <tr>
@@ -65,7 +63,9 @@
    
 4. 执行命令 `pub global run flutter_mp -i [flutter目录] -o [目标小程序目录]` 
 
-5. 使用微信开发者导入打开 `4`过程的 `[目标小程序目录]` 。这样你的flutter应用就运行在了微信小程序上
+5. 使用微信开发者导入打开 `4`过程的 `[目标小程序目录]` 。
+
+这样你的flutter应用就运行在了微信小程序上
 
 ## Examples
 1. 官方布局样例[lakes](https://github.com/areslabs/flutter_mp/tree/master/examples/lakes), 对应编译出来的小程序在[lakesMP](https://github.com/areslabs/flutter_mp/tree/master/examples/lakes)(当然你可以手动编译到任何你喜欢到目录)。
