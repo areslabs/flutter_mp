@@ -1,0 +1,26 @@
+name: flutter_mp_cli
+
+executables:
+  flutter_mp: main
+
+description: Bring your Flutter code to mini program.
+version: 0.0.1
+homepage: https://github.com/areslabs/flutter_mp
+author: yankang <1527997464@qq.com>
+
+
+environment:
+  sdk: '>=2.4.0 <3.0.0'
+
+dependencies:
+  args: ^1.5.0
+  path: ^1.6.4
+  analyzer: ^0.37.0
+  resource: ^2.1.6
+
+dev_dependencies:
+  pedantic: any
+  test: any
+
+
+
