@@ -1,0 +1,67 @@
+<template name="childTemp27">
+   <template wx:if="{{d.tempName}}" is="{{d.tempName}}" data="{{...d}}"/>
+   <block wx:else>
+       <block wx:for="{{d}}" wx:key="key">
+           <template is="{{item.tempName}}" data="{{...item}}"/>
+       </block>
+   </block>
+</template>
+<template name="childTemp46">
+   <template wx:if="{{d.tempName}}" is="{{d.tempName}}" data="{{...d}}"/>
+   <block wx:else>
+       <block wx:for="{{d}}" wx:key="key">
+           <template is="{{item.tempName}}" data="{{...item}}"/>
+       </block>
+   </block>
+</template>
+<template name="TN1">
+	<view class="Container" diuu="{{DIUU1}}" style="{{DIUU1style}}">
+		<view class="Row" diuu="{{DIUU2}}" style="{{DIUU2style}}">
+			<view class="Expanded" diuu="{{DIUU3}}" style="{{DIUU3style}}">
+				<view class="Column" diuu="{{DIUU4}}" style="{{DIUU4style}}">
+					<view class="Container" diuu="{{DIUU5}}" style="{{DIUU5style}}">
+						<view class="Text" diuu="{{DIUU6}}" style="{{DIUU6style}}">{{DIUU6data}}</view>
+					</view>
+					<view class="Text" diuu="{{DIUU7}}" style="{{DIUU7style}}">{{DIUU7data}}</view>
+				</view>
+			</view>
+			<text class="Icon" diuu="{{DIUU8}}" style="{{DIUU8style}}">{{DIUU8icon}}</text>
+			<view class="Text" diuu="{{DIUU9}}" style="{{DIUU9style}}">{{DIUU9data}}</view>
+		</view>
+	</view>
+</template>
+<template name="TN2">
+	<view class="Container" diuu="{{DIUU10}}" style="{{DIUU10style}}">
+		<view class="Row" diuu="{{DIUU11}}" style="{{DIUU11style}}">
+			<template wx:if="{{DK1}}" is="childTemp27" data="{{d: DK1}}"/>
+			<template wx:if="{{DK2}}" is="childTemp27" data="{{d: DK2}}"/>
+			<template wx:if="{{DK3}}" is="childTemp27" data="{{d: DK3}}"/>
+		</view>
+	</view>
+</template>
+<template name="TN3">
+	<view class="Container" diuu="{{DIUU12}}" style="{{DIUU12style}}">
+		<view class="Text" diuu="{{DIUU13}}" style="{{DIUU13style}}">{{DIUU13data}}</view>
+	</view>
+</template>
+<template name="TN4">
+	<block>
+		<view class="Scaffold" diuu="{{DIUU15}}" style="{{DIUU15style}}">
+			<scroll-view class="ListView" diuu="{{DIUU16}}" style="{{DIUU16style}}">
+				<image class="Image" diuu="{{DIUU17}}" style="{{DIUU17style}}" src="{{DIUU17src}}" mode="{{DIUU17mode}}"/>
+				<template wx:if="{{DK4}}" is="childTemp46" data="{{d: DK4}}"/>
+				<template wx:if="{{DK5}}" is="childTemp46" data="{{d: DK5}}"/>
+				<template wx:if="{{DK6}}" is="childTemp46" data="{{d: DK6}}"/>
+			</scroll-view>
+		</view>
+	</block>
+</template>
+<template name="TN5">
+	<view class="Column" diuu="{{DIUU18}}" style="{{DIUU18style}}">
+		<text class="Icon" diuu="{{DIUU19}}" style="{{DIUU19style}}">{{DIUU19icon}}</text>
+		<view class="Container" diuu="{{DIUU20}}" style="{{DIUU20style}}">
+			<view class="Text" diuu="{{DIUU21}}" style="{{DIUU21style}}">{{DIUU21data}}</view>
+		</view>
+	</view>
+</template>
+<template wx:if="{{(_r && _r.tempName)}}" is="{{_r.tempName}}" data="{{..._r}}"/>

@@ -1,0 +1,13 @@
+{
+	"pages": [
+		"lib/main"
+	],
+	"window": {
+		"backgroundTextStyle": "light",
+		"backgroundColor": "#E9E9E9",
+		"enablePullDownRefresh": false,
+		"navigationBarTitleText": "HelloWorld",
+		"navigationBarBackgroundColor": "#eee",
+		"navigationBarTextStyle": "black"
+	}
+}

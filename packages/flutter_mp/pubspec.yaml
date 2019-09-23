@@ -1,0 +1,15 @@
+name: flutter_mp
+description: a tiny flutter for mini program.
+version: 0.0.1
+homepage: https://github.com/areslabs/flutter_mp
+author: yankang <1527997464@qq.com>
+
+environment:
+  sdk: '>=2.4.0 <3.0.0'
+
+dependencies:
+   js: any
+
+dev_dependencies:
+  pedantic: any
+  test: any
