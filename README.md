@@ -1,6 +1,5 @@
 # flutter_mp
 
----
 **flutter_mp** inspired by [alita](https://github.com/areslabs/alita)。 `Alita`引擎对`JSX`的动态处理方式，给声明式UI框架在
 类小程序运行提供了思路。**flutter_mp**正是这个思路在**Flutter**上的尝试。 
 
