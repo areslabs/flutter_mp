@@ -30,5 +30,4 @@ main(List<String> arguments) async {
     }
 
     await cli.tran(inputDir, outputDir);
-    print('\nsuccess！！');
 }

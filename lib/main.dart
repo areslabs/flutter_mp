@@ -109,7 +109,12 @@ void generateJSCode(inputDir, outputDir) {
         ['--out=${outJs}', entryDart],
     );
 
-    print('dart2js ${result.stdout}');
+    if (result.exitCode == 1) {
+        print('dart2js error! 请查看所有dart依赖库是否安装');
+        new Directory(inputDir)
+            ..deleteSync(recursive: true);
+        return;
+    }
 
     // remove 所有中间文件
     var sourceMapPath = p.join(outputDir, '$outJsFileName.map');
@@ -136,5 +141,5 @@ function dartMainRunner(main, args) {
 }
         ''', mode: FileMode.append);
 
-    print('entryDart: $entryDart, outJs: $outJs');
+    print('success!');
 }

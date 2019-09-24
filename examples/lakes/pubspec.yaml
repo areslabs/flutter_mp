@@ -29,8 +29,7 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
 
-  flutter_mp:
-    path: /Volumes/work/flutter_mp/packages/flutter_mp
+
 
 
 
