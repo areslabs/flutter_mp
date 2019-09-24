@@ -29,7 +29,10 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
 
-
+  flutter_mp:
+    git:
+      url: https://github.com/areslabs/flutter_mp
+      path: packages/flutter_mp
 
 
 
