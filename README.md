@@ -41,17 +41,13 @@
 现阶段，我们建议你仅仅在`Examples`下的[lakes](https://github.com/areslabs/areslabs/tree/master/examples/lakes)下修改代码，尝试**flutter_mp**。
 
 
-1. 安装`flutter_mp_cli`
+1. 安装`flutter_mp`命令
     ```shell
        pub global activate --source git https://github.com/areslabs/flutter_mp.git
     ```
 
-2. 运行`pub global run flutter_mp -v` 查看命令是否安装成功
+2. 运行`flutter_mp -v` 查看命令是否安装成功
     
-     **建议**：手动把Pub缓存的bin目录添加到PATH中： `PATH="$PATH":"$HOME/.pub-cache/bin"`。 这样你就可以直接在命令行运行`flutter_mp`。 否则你需要
-   `pub global run flutter_mp`。 关于`pub global`请[查看](https://dart.dev/tools/pub/cmd/pub-global)。
-   
-   
 3. 在你的`flutter`项目添加如下依赖
    ```yaml
       dev_dependencies:
@@ -61,7 +57,7 @@
              path: packages/flutter_mp
    ```
    
-4. 执行命令 `pub global run flutter_mp -i [flutter目录] -o [目标小程序目录]` 
+4. 执行命令 `flutter_mp -i [flutter目录] -o [目标小程序目录]` 
 
 5. 使用微信开发者导入打开 `4`过程的 `[目标小程序目录]` 。
 
