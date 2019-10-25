@@ -85,17 +85,21 @@ void tran(inputDir, outputDir) async {
     }
 
     var imageInput = new Directory(p.join(inputAbs, 'images'));
-    new Directory(p.join(outputAbs, 'images'))
-        ..createSync();
-    imageInput.listSync(recursive: true).forEach((file) {
-        if (file is Directory) {
-            var newDirPath = file.path.replaceFirst(new RegExp(inputAbs), dtmpPath);
-            new Directory(newDirPath)
-                ..createSync();
-        } else if (file is File) {
-            file.copySync(file.path.replaceFirst(new RegExp(inputAbs), outputAbs));
-        }
-    });
+
+    if (imageInput.existsSync()) {
+        new Directory(p.join(outputAbs, 'images'))
+            ..createSync();
+        imageInput.listSync(recursive: true).forEach((file) {
+            if (file is Directory) {
+                var newDirPath = file.path.replaceFirst(new RegExp(inputAbs), dtmpPath);
+                new Directory(newDirPath)
+                    ..createSync();
+            } else if (file is File) {
+                file.copySync(file.path.replaceFirst(new RegExp(inputAbs), outputAbs));
+            }
+        });
+    }
+
 
     generateJSCode(dtmpPath, outputAbs);
 }
