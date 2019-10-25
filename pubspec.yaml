@@ -4,7 +4,7 @@ executables:
   flutter_mp: main
 
 description: Bring your Flutter code to mini program.
-version: 0.0.1
+version: 0.0.2
 homepage: https://github.com/areslabs/flutter_mp
 author: yankang <1527997464@qq.com>
 
